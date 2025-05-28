@@ -1,0 +1,137 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #c2e9fb 0%, #81a4fd 100%);
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #557afc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #557afc;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 1rem 2rem 1rem;
+    background: none;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #557afc;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255,255,255,0.92);
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(85,122,252,0.07);
+}
+
+h2 {
+    color: #557afc;
+    margin-bottom: 1rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    flex: 1 1 230px;
+    background: #f4f7fe;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(85,122,252,0.05);
+    margin-bottom: 1rem;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 0.8rem;
+    border: 1px solid #c2d3fd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+#contactForm button {
+    background: #557afc;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contactForm button:hover {
+    background: #3957d6;
+}
+
+#formStatus {
+    font-size: 1rem;
+    color: #2e7d32;
+    margin-top: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem 1.5rem 1rem;
+    color: #888;
+    background: none;
+    font-size: 1rem;
+}
